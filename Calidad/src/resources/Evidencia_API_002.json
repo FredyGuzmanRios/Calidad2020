@@ -1,0 +1,142 @@
+{
+	"id": "dfc657eb-671b-4141-8683-d25260a05454",
+	"name": "API Practica Test",
+	"timestamp": "2020-11-25T04:37:05.900Z",
+	"collection_id": "0d2a8a21-b340-4546-8bca-5a58c372b3c1",
+	"folder_id": 0,
+	"environment_id": "838cbee4-1080-4d7e-ae2d-89c4a621b981",
+	"totalPass": 4,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "597fab66-064f-42eb-8805-76ecb7f78b96",
+			"name": "Register",
+			"url": "http://localhost:3000/api/users/register",
+			"time": 575,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Id": true
+			},
+			"testPassFailCounts": {
+				"Id": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				575
+			],
+			"allTests": [
+				{
+					"Id": true
+				}
+			]
+		},
+		{
+			"id": "9b1e24e4-8107-4df1-b7d4-28484d7130ec",
+			"name": "Login",
+			"url": "http://localhost:3000/api/users/tokens/",
+			"time": 574,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Token": true
+			},
+			"testPassFailCounts": {
+				"Token": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				574
+			],
+			"allTests": [
+				{
+					"Token": true
+				}
+			]
+		},
+		{
+			"id": "f5a38b50-5bbf-494d-9d35-80f9f47fe2bf",
+			"name": "Crear Pelicula",
+			"url": "http://localhost:3000/api/movies",
+			"time": 2,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Se creo": true
+			},
+			"testPassFailCounts": {
+				"Se creo": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Se creo": true
+				}
+			]
+		},
+		{
+			"id": "799547c6-0e80-4ad8-8e63-e50e24226a6f",
+			"name": "Obtener Peliculas",
+			"url": "http://localhost:3000/api/movies?",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Existe pelicula": true
+			},
+			"testPassFailCounts": {
+				"Existe pelicula": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Existe pelicula": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1153,
+	"collection": {
+		"requests": [
+			{
+				"id": "597fab66-064f-42eb-8805-76ecb7f78b96",
+				"method": "POST"
+			},
+			{
+				"id": "9b1e24e4-8107-4df1-b7d4-28484d7130ec",
+				"method": "POST"
+			},
+			{
+				"id": "f5a38b50-5bbf-494d-9d35-80f9f47fe2bf",
+				"method": "POST"
+			},
+			{
+				"id": "799547c6-0e80-4ad8-8e63-e50e24226a6f",
+				"method": "GET"
+			}
+		]
+	}
+}
